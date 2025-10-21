@@ -1,0 +1,146 @@
+header {
+  display: flex;                 /* logo i menu w jednej linii */
+  justify-content: space-between;/* logo po lewej, menu po prawej */
+  align-items: center;           /* wyśrodkowanie w pionie */
+  padding: 20px 40px;
+  background: #f4f4f4;
+  position: relative;            /* żeby logo mogło wystawać */
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  position: relative; /* przewija się razem ze stroną */
+  top: -10px;         /* lekko wystaje ponad header */
+}
+
+/* Menu */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;          /* odstępy między zakładkami */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #0078d7;     /* zmiana koloru po najechaniu */
+}
+
+nav>a {
+    color: rgb(0, 3, 5);
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.button-nav{
+  display: inline-block;
+  color: white;
+  background-color: rgb(9, 9, 124);
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 6px;
+  border-radius: 6px;
+}
+.container {
+  display: inline-flex;
+  width: 2vw 2vw 1vw;
+  gap: 20px;
+  /* trzeba posprawdzac wysokosci */
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.container section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+.container .center img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Kontener na zakładki */
+.stats {
+  display: flex;
+  flex-direction: column; /* pionowo */
+  align-items: center;    /* wyśrodkowanie w kolumnie */
+}
+
+/* Pojedyncza zakładka */
+.stat {
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin:20px ;
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.stat:hover {
+  transform: scale(1.05);
+}
+
+/* Liczba */
+.stat .number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0078d7; /* niebieski akcent */
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Opis */
+.stat p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.container .center img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #ffffff;          
+  color: rgb(0, 0, 0);              
+  padding: 30px 20px;
+  text-align: center;        
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;   
+  gap: 20px;                 
+}
+
+footer .social-links a {
+  font-size: 28px;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+

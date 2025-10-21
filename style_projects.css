@@ -1,0 +1,65 @@
+header {
+  display: flex;                 /* logo i menu w jednej linii */
+  justify-content: space-between;/* logo po lewej, menu po prawej */
+  align-items: center;           /* wyśrodkowanie w pionie */
+  padding: 20px 40px;
+  background: #f4f4f4;
+  position: relative;            /* żeby logo mogło wystawać */
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  position: relative; /* przewija się razem ze stroną */
+  top: -10px;         /* lekko wystaje ponad header */
+}
+
+/* Menu */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;          /* odstępy między zakładkami */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #0078d7;     /* zmiana koloru po najechaniu */
+}
+
+nav>a {
+    color: rgb(0, 3, 5);
+    padding: 15px 15px;
+    text-decoration: none;
+}
+footer {
+  background: #ffffff;          
+  color: rgb(0, 0, 0);              
+  padding: 30px 20px;
+  text-align: center;        
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;   
+  gap: 20px;                 
+}
+
+footer .social-links a {
+  font-size: 28px;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
